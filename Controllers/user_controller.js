@@ -1,4 +1,5 @@
 const express = require('express');
+const User= require('../Models/usermodel'); // Import the User model
 class UserController {
   static login(req, res) {
     res.render('login'); // Render the login view
