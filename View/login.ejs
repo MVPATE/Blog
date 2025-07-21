@@ -1,0 +1,19 @@
+
+<h1>Login Page</h1>
+<%-include("./parcials/header.ejs") %>
+<div class="container" style="width: 50%;">
+  <div class="row ">
+    <div class="col-md-12 sm-12 lg-12 col-12">
+      <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+<%-include('./parcials/footer.ejs') %>
